@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Login Page </title>
+<style> 
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("richard-horvath-RAZU_R66vUc-unsplash.jpg");
+  background-size: cover;
+  color:white;
+  }
+button { 
+        background-color:#FF5733;
+        width: 100%;
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: none; 
+        cursor: pointer; 
+        font-size:20px;
+        color:white;
+        opacity:0.8;
+         } 
+ form { 
+        margin: 25px 400px 25px 400px;
+/*        border: 3px solid #f1f1f1; */
+    } 
+ input[type=text], input[type=password],select{ 
+        width: 100%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 1px solid white; 
+        box-sizing: border-box; 
+    }
+ button:hover { 
+        opacity: 0.7; 
+    } 
+  .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px;
+        margin: 10px 5px;
+    } 
+      
+   
+ .container { 
+        padding: 25px; 
+        border: 1px solid white;
+/*        background-color: lightblue;*/
+    } 
+    label{
+        font-size: 24px;
+    }
+    #cars{
+        size: 50px;
+    }
+</style> 
+</head>  
+<body>  
+    <center> <h1 style="color:whitesmoke"> SUV Booking </h1> </center> 
+    <form action="booking" method="POST">
+        <div class="container"> 
+            <label>Your Registered Email ID : </label> 
+            <input type="text" placeholder="Enter Email ID" name="email" required>
+            <label>Phone Number : </label> 
+            <input type="text" placeholder="Enter Phone number" name="phno" required>
+            <label>Start Date : </label> 
+            <input type="text" placeholder="Enter First name" name="start" required>
+            <label>End Date : </label> 
+            <input type="text" placeholder="Enter Last Name" name="end" required>
+            <label>Maximum kilometers : </label> 
+            <input type="text" placeholder="Enter Kilometer" name="kilo" required>
+            <input type="text" value ="suv" style="display:none" name="car_type">
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars">
+                <option value="choose">Choose..</option>
+                <option value="Hyundai Creta">Hyundai Creta</option>
+                <option value="Hyundai Venue">Hyundai Venue</option>
+                <option value="Tata Nexon">Tata Nexon</option>
+                <option value="Kia Seltos">Kia Seltos</option>
+                <option value="Mahindra XUV 300">Mahindra XUV 300</option>
+            </select>
+             
+            <button type="submit">Book A Ride</button> 
+        </div> 
+    </form>   
+</body>   
+</html>

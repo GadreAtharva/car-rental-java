@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Login Page </title>
+<style> 
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("richard-horvath-RAZU_R66vUc-unsplash.jpg");
+  background-size: cover;
+  color:white;
+  }
+button { 
+        background-color:#FF5733;
+        width: 100%;
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: none; 
+        cursor: pointer; 
+        font-size:20px;
+        color:white;
+        opacity: 0.8;
+         } 
+ form { 
+        margin: 25px 400px 25px 400px;
+/*        border: 3px solid #f1f1f1; */
+    } 
+ input[type=text], input[type=password] { 
+        width: 100%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 1px solid white; 
+        box-sizing: border-box; 
+    }
+ button:hover { 
+        opacity: 0.7; 
+    } 
+  .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px;
+        margin: 10px 5px;
+    } 
+      
+   
+ .container { 
+        padding: 25px; 
+        border: 1px solid white;
+/*        background-color: lightblue;*/
+    } 
+    label{
+        font-size: 24px;
+    }
+</style> 
+</head>  
+<body>  
+    <center> <h1 style="color:whitesmoke"> SIGN UP </h1> </center> 
+    <form action="signup" method="POST">
+        <div class="container"> 
+            <label>First Name : </label> 
+            <input type="text" placeholder="Enter First name" name="u_fname" required>
+            <label>Last Name : </label> 
+            <input type="text" placeholder="Enter Last Name" name="u_lname" required>
+            <label>Phone Number : </label> 
+            <input type="text" placeholder="Enter Phone number" name="phno" required>
+            <label>Email ID : </label> 
+            <input type="text" placeholder="Enter Email ID" name="email" required>
+            <label>Password : </label> 
+            <input type="password" placeholder="Enter Password" name="password_f" required>
+             <label>Confirm Your Password : </label> 
+            <input type="password" placeholder="Enter Password" name="password_s" required>
+            <button type="submit">Sign Up</button> 
+        </div> 
+    </form>   
+</body>   
+</html>
